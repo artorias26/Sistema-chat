@@ -1,0 +1,25 @@
+<ion-header no-border style="background: #fff;">
+  <div class="login-header ion-padding">
+    <img class="logo-img" src="assets/icon/fondo.png">
+  </div>
+</ion-header>
+
+<ion-content>
+ <div class="center">
+   <div heading-column-lr class="centeH1">
+     <h1 big-heading style="margin-bottom: 20px;">Recuperación</h1>
+     
+   </div>
+  <ion-label style="margin-bottom: 20px;">
+     ¿Olvidaste tu contraseña? Coloca tu correo para recuperarla.
+   </ion-label>
+   <ion-item>
+     <ion-icon name="person-circle"></ion-icon>
+     <ion-input [(ngModel)]="email" placeholder="Ingrese correo" type="Text" > </ion-input>
+   </ion-item>
+   <div linespace></div>
+   <ion-button class="ion-button-class prueba" shape="round" fill="solid" size="large" expand="block" (click)="btnRecuperar()">RECUPERAR</ion-button>
+   <ion-label class="ion-text-center"><span class="link-button" (click)="btnRuta()">volver a Login</span></ion-label>
+ </div>
+
+</ion-content>

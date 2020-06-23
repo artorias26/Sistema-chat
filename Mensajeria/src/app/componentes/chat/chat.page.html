@@ -1,0 +1,32 @@
+<ion-header class="ion-header">
+  <div class="login-header ion-padding">
+    <ion-searchbar placeholder="Buscar ..." (ionInput)="search($event)"></ion-searchbar>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <!-- 
+    <ion-item lines="full"> 
+      <ion-button slot="start" size="small" fill="clear"> prueba</ion-button>
+      <ion-button slot="end" size="small" fill="clear"> prueba02</ion-button>
+    </ion-item>
+    -->
+  
+    <ion-item detail *ngFor="let list of usuarioLista | search:searchText:'usuario'" routerLink="/conversaciones">
+      <ion-avatar slot="start">
+        <ion-icon name="person-circle"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <div class="flex_box">
+          <h3>{{ list.nombre }} {{ list.apellido }}</h3>
+          <ion-note slot="end">12:54</ion-note>
+        </div>
+        <p>
+          <!-- <ion-icon class="text-icon" name="checkmark-done-outline" color="primary"></ion-icon> -->
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
