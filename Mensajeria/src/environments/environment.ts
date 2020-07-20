@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   // apiUrl: 'https://temri.000webhostapp.com/api'
   // apiUrl: 'http://localhost/chat/chat'
-  apiUrl: 'http://localhost:81/web'
+  apiUrl: 'http://localhost:82/web'
 };
 
 /*
